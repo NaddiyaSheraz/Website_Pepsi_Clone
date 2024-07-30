@@ -1,0 +1,297 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: #0025ff;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .nav_img {
+            width: 65px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        }
+
+        @keyframes pepsi_logo {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .nav_img:hover {
+            animation: pepsi_logo 1s infinite;
+        }
+
+        ul>li {
+            list-style: none;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 16px;
+            padding-right: 20px;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 13px;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+            
+        }
+
+        li {
+            padding-left: 16px;
+            color: #fff;
+        }
+
+        .nav_button>button {
+            margin-left: 40rem;
+            width: 200px;
+            border-radius: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            background-color: #0025ff;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #fff;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .bttnn:hover {
+            animation: swing 1s ease-in-out;
+            background-color: white;
+            color: #0025ff;
+        }
+        @keyframes swing {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(-10deg); }
+    30% { transform: rotate(10deg); }
+    45% { transform: rotate(-5deg); }
+    60% { transform: rotate(5deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0); }
+}
+        .part_2 {
+            display: block;
+            background-color: #0025ff;
+        }
+
+        .part_2>iframe {
+            width: 100%;
+            height: 500px;
+            cursor: pointer;
+        }
+
+        .part_3_img>img {
+            background-image: cover;
+            width: 100%;
+        }
+
+        .part_3_a {
+            position: relative;
+            bottom: 100px;
+            left: 500px;
+            border: 1px solid black;
+            background-color: #fff;
+            font-weight: 800;
+            font-size: 40px;
+            color: black;
+            text-decoration: none;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .part_3_a:hover {
+            color: #fff;
+            background-color: #0025ff;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+
+        .part_4 {
+            justify-content: center;
+            flex-direction: column;
+            height: 220vw;
+            background-image: url(images/background_cherry.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+        }
+
+        .part_4_1img {
+            width: 90%;
+            padding: 2rem;
+        }
+
+        .part_4_img {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .part_4_img1>div>img {
+            width: 550px;
+        }
+
+        .part_4_img1>div>button {
+            padding: 2rem;
+            cursor: pointer;
+        }
+
+        .part_4_img2:hover {
+
+            border-radius: 28px;
+            box-shadow: 0px 0px 4rem #0025ff;
+            cursor: pointer;
+        }
+
+        .part_4_img1>div>BUTTON {
+            color: #000;
+            padding: 1rem;
+            font-size: 40px;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+
+        .part_4_btn:hover {
+            color: #fff;
+            background-color: #0025ff;
+            border: none;
+        }
+
+        .part_5_video {
+            width: 100%;
+        }
+
+        .part_6 {
+            display: block;
+            background-color: black;
+        }
+
+        .part_6_p {
+            color: #0025ff;
+            font-size: 40px;
+            font-weight: 900;
+            text-align: center;
+
+        }
+
+        .part_6_imgs {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 218px;
+            transition: all 0.3s ease-in-out;
+            
+        }
+
+        .part_6_img1 {
+            
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            /* Required for z-index to work correctly */
+            z-index: 1;
+            /* Default z-index lower than siblings */
+        }
+
+        .part_6_img1:hover {
+    animation: pepsi_img 2s ease-in-out;
+}
+        @keyframes pepsi_img {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+
+    0% { transform: rotate(0); }
+    15% { transform: rotate(-10deg); }
+    30% { transform: rotate(10deg); }
+    45% { transform: rotate(-5deg); }
+    60% { transform: rotate(5deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0); }
+    
+}
+        #img {
+            border: 2px solid #0025ff;
+            display: flex;
+            margin: 7px 30px 7px 30px;
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #0025ff;
+            padding: 4rem 0 6rem 0;
+        }
+
+        .footer1_img {
+            width: 110px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        @keyframes pepsi_logo {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .footer1_img:hover {
+            animation: pepsi_logo 1s infinite;
+        }
+
+        .footer2>p {
+            color: #fff;
+            line-height: 2rem;
+            font-weight: bold;
+
+        }
+
+        p:hover {
+            color: gray;
+        }
+
+        .footer5_i {
+            font-size: 30px;
+            color: white;
+            margin-left: 1.4rem;
+            margin-top: 2rem;
+        }
+
+        .footer5_i:hover {
+            color: gray;
+        }
+    
